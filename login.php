@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['username'] = $username;
-        header('Location: home.php');
+        header('Location: index.php');
     } else {
         echo "Username atau password salah!";
     }
