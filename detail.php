@@ -23,7 +23,7 @@ $motor = mysqli_fetch_assoc($result);
         <img src="images/<?= $motor['image'] ?>" alt="Gambar Motor" class="motor-image">
         <p><?= $motor['deskripsi'] ?></p>
         <p>Harga: Rp <?= $motor['harga'] ?></p>
-        <a href="home.php" class="button">Kembali</a>
+        <a href="index.php" class="button">Kembali</a>
     </div>
 </body>
 </html>
