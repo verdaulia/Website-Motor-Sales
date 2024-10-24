@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: home.php");
+        header("Location: index.php");
         exit();
     } else {
         echo "Error updating record: " . $conn->error;
