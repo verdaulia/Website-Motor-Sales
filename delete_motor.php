@@ -18,13 +18,13 @@ if (isset($_GET['id'])) {
     // Eksekusi query
     if ($conn->query($sql) === TRUE) {
         // redirect kembali ke home.php
-        header("Location: home.php");
+        header("Location: index.php");
     } else {
         echo "Error menghapus data: " . $conn->error;
     }
 } else {
     // Jika tidak ada ID di URL, kembalikan ke halaman utama
-    header("Location: home.php");
+    header("Location: index.php");
 }
 
 // Tutup koneksi
